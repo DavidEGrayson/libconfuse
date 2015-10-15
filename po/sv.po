@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libconfuse 2.6\n"
 "Report-Msgid-Bugs-To: https://github.com/martinh/libconfuse/issues\n"
-"POT-Creation-Date: 2015-10-12 21:48+0200\n"
+"POT-Creation-Date: 2015-10-14 18:59-0700\n"
 "PO-Revision-Date: 2003-01-26 14:10+0100\n"
 "Last-Translator: Martin Hedenfalk <martin@bzero.se>\n"
 "Language-Team: None <martin@bzero.se>\n"
@@ -48,55 +48,55 @@ msgstr "felaktigt flyttalsvärde för flaggan '%s'"
 msgid "floating point value for option '%s' is out of range"
 msgstr "flyttalsvärdet för flaggan '%s' är utanför tillåten gräns"
 
-#: src/confuse.c:725
+#: src/confuse.c:727
 #, c-format
 msgid "invalid boolean value for option '%s'"
 msgstr "felaktigt boolskt värde för flaggan '%s'"
 
-#: src/confuse.c:861
+#: src/confuse.c:863
 msgid "premature end of file"
 msgstr "för tidigt filslut"
 
-#: src/confuse.c:874
+#: src/confuse.c:876
 msgid "unexpected closing brace"
 msgstr "oväntad avslutande måsvinge"
 
-#: src/confuse.c:881 src/confuse.c:951 src/confuse.c:973 src/confuse.c:1000
+#: src/confuse.c:883 src/confuse.c:953 src/confuse.c:975 src/confuse.c:1002
 #, c-format
 msgid "unexpected token '%s'"
 msgstr "oväntat värde '%s'"
 
-#: src/confuse.c:908
+#: src/confuse.c:910
 #, c-format
 msgid "attempt to append to non-list option '%s'"
 msgstr "försök att lägga till värden till en icke-lista ('%s')"
 
-#: src/confuse.c:926
+#: src/confuse.c:928
 #, c-format
 msgid "missing equal sign after option '%s'"
 msgstr "saknar likamed-tecken efter '%s'"
 
-#: src/confuse.c:1008
+#: src/confuse.c:1010
 #, c-format
 msgid "missing opening brace for section '%s'"
 msgstr "öppningsparentes saknas för sektion '%s'"
 
-#: src/confuse.c:1033
+#: src/confuse.c:1035
 #, c-format
 msgid "missing title for section '%s'"
 msgstr "titel till sektion '%s' saknas"
 
-#: src/confuse.c:1045
+#: src/confuse.c:1047
 #, c-format
 msgid "missing parenthesis for function '%s'"
 msgstr "parentes saknas i anropet till funktionen '%s'"
 
-#: src/confuse.c:1068 src/confuse.c:1086
+#: src/confuse.c:1070 src/confuse.c:1088
 #, c-format
 msgid "syntax error in call of function '%s'"
 msgstr "syntaktiskt fel i anrop till funktionen '%s'"
 
-#: src/confuse.c:1371
+#: src/confuse.c:1376
 msgid "wrong number of arguments to cfg_include()"
 msgstr "fel antal argument till cfg_include()"
 
