@@ -1122,7 +1122,7 @@ static char *cfg_make_fullpath(const char *dir, const char *file)
 {
     assert(dir && file);
 
-    ssize_t n = strlen(dir) + strlen(file) + 2;
+    size_t n = strlen(dir) + strlen(file) + 2;
     char *path = malloc(n);
 
     assert(path);
