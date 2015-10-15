@@ -1144,7 +1144,9 @@ static char *cfg_make_fullpath(const char *dir, const char *file)
 DLLIMPORT char *cfg_searchpath(cfg_searchpath_t *p, const char *file)
 {
     char *fullpath;
+#ifdef HAVE_SYS_STAT_H
     struct stat st;
+#endif
     int err;
 
     if (!p) return NULL;
