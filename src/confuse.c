@@ -61,9 +61,9 @@ extern char *cfg_qstring;
 
 char *cfg_yylval = 0;
 
-const char confuse_version[] = PACKAGE_VERSION;
-const char confuse_copyright[] = PACKAGE_STRING" by Martin Hedenfalk <martin@bzero.se>";
-const char confuse_author[] = "Martin Hedenfalk <martin@bzero.se>";
+DLLIMPORT const char confuse_version[] = PACKAGE_VERSION;
+DLLIMPORT const char confuse_copyright[] = PACKAGE_STRING" by Martin Hedenfalk <martin@bzero.se>";
+DLLIMPORT const char confuse_author[] = "Martin Hedenfalk <martin@bzero.se>";
 
 static int cfg_parse_internal(cfg_t *cfg, int level,
                               int force_state, cfg_opt_t *force_opt);

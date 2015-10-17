@@ -116,10 +116,7 @@ int main(int argc, char **argv)
         CFG_END()
     };
 
-#ifndef _WIN32
-    /* for some reason, MS Visual C++ chokes on this (?) */
     printf("Using %s\n\n", confuse_copyright);
-#endif
 
     cfg = cfg_init(opts, CFGF_NOCASE);
 

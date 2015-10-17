@@ -286,9 +286,9 @@ struct cfg_opt_t {
     cfg_free_func_t freecb; /***< user-defined memory release function */
 };
 
-extern const char __export confuse_copyright[];
-extern const char __export confuse_version[];
-extern const char __export confuse_author[];
+extern DLLIMPORT const char __export confuse_copyright[];
+extern DLLIMPORT const char __export confuse_version[];
+extern DLLIMPORT const char __export confuse_author[];
 
 #define __CFG_STR(name, def, flags, svalue, cb) \
   {name,CFGT_STR,0,0,flags,0,{0,0,cfg_false,def,0},0,{.string=svalue},cb,0,0,0}
