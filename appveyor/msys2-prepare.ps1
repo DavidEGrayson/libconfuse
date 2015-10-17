@@ -12,6 +12,7 @@ function Acquire($file, $url, $checksum)
   {
     "Using existing $file."
   }
+  ls
   $actual_checksum = (Get-FileHash $file)[0].Hash.ToLower()
   if (!($checksum -eq $actual_checksum))
   {
