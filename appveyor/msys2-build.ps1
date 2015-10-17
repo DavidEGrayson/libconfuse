@@ -12,7 +12,7 @@ make check
 "@
 
 $env:CHERE_INVOKING = "1"
-$env:MSYSTEM = "MSYS"
+$env:MSYSTEM = "MINGW64"
 C:/msys64/usr/bin/bash -e -l -c $prepare
 
 $env:MSYSTEM = "MINGW64"
