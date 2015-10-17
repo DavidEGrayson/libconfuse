@@ -95,7 +95,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\confuse.c" />
-    <ClCompile Include="..\..\..\src\lexer.c" />
+    <ClCompile Include="..\..\lexer.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\src\confuse.h" />
