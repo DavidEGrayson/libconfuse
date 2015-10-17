@@ -23,7 +23,9 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <errno.h>
-#ifndef _WIN32
+#ifdef _WIN32
+# include <windows.h>
+#else
 # include <pwd.h>
 #endif
 #ifdef HAVE_UNISTD_H
@@ -1144,7 +1146,9 @@ static char *cfg_make_fullpath(const char *dir, const char *file)
 DLLIMPORT char *cfg_searchpath(cfg_searchpath_t *p, const char *file)
 {
     char *fullpath;
+#ifdef HAVE_SYS_STAT_H
     struct stat st;
+#endif
     int err;
 
     if (!p) return NULL;
@@ -1160,10 +1164,14 @@ DLLIMPORT char *cfg_searchpath(cfg_searchpath_t *p, const char *file)
     err = stat((const char*)fullpath, &st);
     if ((!err) && S_ISREG(st.st_mode)) return fullpath;
 
+#elif defined(_WIN32)
+
+    DWORD attr = GetFileAttributes(fullpath);
+    if (attr != INVALID_FILE_ATTRIBUTES && (attr & FILE_ATTRIBUTE_NORMAL))
+        return fullpath;
+
 #else
-
-    /* needs an alternative check here for win32 */
-
+#error "not sure how to check if a path is a regular file"
 #endif
 
     free(fullpath);
