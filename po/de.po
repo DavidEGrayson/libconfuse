@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: confuse 2.6-2\n"
 "Report-Msgid-Bugs-To: https://github.com/martinh/libconfuse/issues\n"
-"POT-Creation-Date: 2015-10-12 21:48+0200\n"
+"POT-Creation-Date: 2015-10-17 16:02-0700\n"
 "PO-Revision-Date: 2010-02-22 02:06-0500\n"
 "Last-Translator: Chris Leick <c.leick@vollbio.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -47,56 +47,56 @@ msgstr "ungültiger Fließkommawert für Option »%s«"
 msgid "floating point value for option '%s' is out of range"
 msgstr "Fließkommawert für Option »%s« ist außerhalb des Abschnitts"
 
-#: src/confuse.c:725
+#: src/confuse.c:727
 #, c-format
 msgid "invalid boolean value for option '%s'"
 msgstr "ungültiger Boolean-Wert für Option »%s«"
 
-#: src/confuse.c:861
+#: src/confuse.c:863
 msgid "premature end of file"
 msgstr "vorzeitiges Ende der Datei"
 
 # http://www.dict.cc/deutsch-englisch/Klammer.html
-#: src/confuse.c:874
+#: src/confuse.c:876
 msgid "unexpected closing brace"
 msgstr "unerwartete schließende eckige Klammer"
 
-#: src/confuse.c:881 src/confuse.c:951 src/confuse.c:973 src/confuse.c:1000
+#: src/confuse.c:883 src/confuse.c:953 src/confuse.c:975 src/confuse.c:1002
 #, c-format
 msgid "unexpected token '%s'"
 msgstr "unerwartetes Element »%s«"
 
-#: src/confuse.c:908
+#: src/confuse.c:910
 #, c-format
 msgid "attempt to append to non-list option '%s'"
 msgstr "Versuch, an die Nicht-Listen-Option »%s« anzuhängen"
 
-#: src/confuse.c:926
+#: src/confuse.c:928
 #, c-format
 msgid "missing equal sign after option '%s'"
 msgstr "fehlendes Gleichheitszeichen nach Option »%s«"
 
-#: src/confuse.c:1008
+#: src/confuse.c:1010
 #, c-format
 msgid "missing opening brace for section '%s'"
 msgstr "öffnende geschweifte Klammer für Abschnitt »%s« fehlt"
 
-#: src/confuse.c:1033
+#: src/confuse.c:1035
 #, c-format
 msgid "missing title for section '%s'"
 msgstr "fehlender Titel für Abschnitt »%s«"
 
-#: src/confuse.c:1045
+#: src/confuse.c:1047
 #, c-format
 msgid "missing parenthesis for function '%s'"
 msgstr "runde Klammer für Funktion »%s« fehlt"
 
-#: src/confuse.c:1068 src/confuse.c:1086
+#: src/confuse.c:1070 src/confuse.c:1088
 #, c-format
 msgid "syntax error in call of function '%s'"
 msgstr "Syntaxfehler im Aufruf der Funktion »%s«"
 
-#: src/confuse.c:1371
+#: src/confuse.c:1376
 msgid "wrong number of arguments to cfg_include()"
 msgstr "falsche Anzahl von Argumenten für cfg_include()"
 
