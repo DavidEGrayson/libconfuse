@@ -2,5 +2,6 @@
 *.filters
 *.opensdf
 *.sdf
+*.vcxproj.user
 Debug
 Release
