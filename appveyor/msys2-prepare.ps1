@@ -26,7 +26,7 @@ Acquire -File $msys2_archive `
   -Checksum "1eac63be7bfff979846dfda0aef6e2b572bc526450586de6364b08aaf642b843"
 
 Acquire -File "tar_utils.zip" `
-  -Url "http://alderaan.tmphax.com/tar_utils.zip" `
+  -Url "http://www.davidegrayson.com/hold/tar_utils.zip" `
   -Checksum "ffe82e94813e12c3a911696adbdd34d6307c01d1b9c756e6ce1c0aebb7477199"
 
 "Extracting tar_utils.zip"
